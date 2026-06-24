@@ -386,7 +386,7 @@
                 </span>
 
                 <h2>
-                    finden wir heraus, ob in Ihren Prozessen
+                    Finden wir heraus, ob in Ihren Prozessen
                     <span>Potenzial steckt.</span>
                 </h2>
 
@@ -417,23 +417,53 @@
 
             </div>
 
-            <form class="contact-form">
+            <form
+    class="contact-form"
+    action="https://formspree.io/f/mbdvdppd"
+    method="POST"
+>
 
-                <input type="text" placeholder="Ihr Name" required>
-                <input type="email" placeholder="Ihre E-Mail" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Ihr Name"
+        required
+    >
 
-                <input type="text" placeholder="Firma">
+    <input
+        type="email"
+        name="email"
+        placeholder="Ihre E-Mail"
+        required
+    >
 
-                <textarea
-                    placeholder="Wie sieht das aktuelle Problem aus?"
-                    rows="6"
-                ></textarea>
+    <input
+        type="text"
+        name="company"
+        placeholder="Firma"
+    >
 
-                <button type="submit">
-                    Nachricht senden
-                </button>
+    <textarea
+        name="message"
+        placeholder="Wie sieht das aktuelle Problem aus?"
+        rows="6"
+        required
+    ></textarea>
 
-            </form>
+    <label class="checkbox-consent">
+        <input
+            type="checkbox"
+            name="consent"
+            required
+        >
+        Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.
+    </label>
+
+    <button type="submit">
+        Nachricht senden
+    </button>
+
+</form>
 
         </div>
 
