@@ -636,6 +636,23 @@ img{
     background:var(--gold-hover);
 }
 
+.checkbox-consent{
+    grid-column:1 / -1;
+
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+
+    font-size:.9rem;
+    color:var(--text-secondary);
+
+    line-height:1.5;
+}
+
+.checkbox-consent input{
+    margin-top:4px;
+}
+
 /* ========================================
    FOOTER DIVIDER
 ======================================== */
